@@ -51,7 +51,7 @@ future improvements:
 ![login page](camerlogin.png)
  
  
-![live usage pt 1](camdemo1.PNG)
+![live usage pt 1](camdemonew.PNG)
  
  
 ![live usage pt 2](camdemo2.PNG)
