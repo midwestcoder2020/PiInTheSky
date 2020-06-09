@@ -28,6 +28,24 @@
 ###
 5. develop future features as you wish
 
+
+####
+future improvements:
+
+	secure signup
+	
+	secure login
+	
+	2FA
+	
+	motion detection
+	
+	computer vision detection
+	
+	notifications
+	
+	
+
 * ie integrate  sqlalchmey for login, or further web responsiveness
 
 ![login page](camerlogin.png)
