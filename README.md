@@ -30,13 +30,13 @@
 
 * ie integrate  sqlalchmey for login, or further web responsiveness
 
- ![iSpeed Test Image](cameralogin.png)
+![login page](camerlogin.png)
  
  
- ![iSpeed Test Image](camerademo1.PNG)
+![live usage pt 1](camdemo1.PNG)
  
  
- ![iSpeed Test Image](camerademo2.PNG)
+![live usage pt 2](camdemo2.PNG)
  
  
 
