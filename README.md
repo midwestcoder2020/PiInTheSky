@@ -4,7 +4,7 @@
  
  ##
  
- This project utilizes the flask web framework to allow for network
+ This project utilizes the flask web framework to allow for network access to your connected cameras. Cameras  as simple as usb webcams can be connected with opencv and their video frames to be streamed for viewing by connected users.
  
  ##
  
