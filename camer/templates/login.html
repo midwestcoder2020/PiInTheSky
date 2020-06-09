@@ -1,0 +1,31 @@
+{% extends 'skeleton.html' %}
+
+
+{% block content%}
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="{{url_for('static', filename='images/user.svg')}}" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form action="{{url_for('login')}}" method="POST">
+      <input type="text" name="login" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="text" name="password" id="password" class="fadeIn third" name="login" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+      {% if error %}
+         <p><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

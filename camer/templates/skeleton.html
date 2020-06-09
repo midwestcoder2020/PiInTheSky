@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Streaming </title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="MidwestCoder">
+    <title>Album example · Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+
+    <!-- Custom styles for this template -->
+    <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+  </head>
+<header>
+<nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+    <a class="navbar-brand" href="">MidwestCoder</a>
+    <a class="navbar-brand" href="{{url_for('about')}}">About</a>
+    <a class="navbar-brand" href="{{url_for('index')}}">Home</a>
+
+    {% if loggedIn %}
+    <a class="navbar-brand" href="{{url_for('logout')}}">Logout</a>
+    {% else %}
+    <a class="navbar-brand" href="{{url_for('index')}}">Login</a>
+    {% endif %}
+</nav>
+</header>
+<body>
+{% block content %}
+
+{% endblock %} 
+ 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+<footer>
+  <nav class="navbar fixed-bottom navbar-dark bg-dark">
+    <br>
+  </nav>
+</footer>
+</html>

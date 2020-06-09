@@ -1,0 +1,50 @@
+{% extends 'skeleton.html' %}
+{%block content%}
+<div class="container">
+  <section>
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome Back</h1>
+    <p class="lead">This is a simple hero unit, a simple way to see your streams</p>
+    <hr class="my-4">
+  </div>
+</section>
+<section class="camStreams">
+    <div class="row">
+      <div class="col-md">
+        <div class="card" style="width: 60rem;">
+          <img src="{{url_for('video_feed_1')}}" class="card-img-top" alt="Stream1">
+          <div class="card-body">
+            <h5 class="card-title">Stream #1</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Enhance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <div class="card" style="width: 60rem;">
+          <img src="{{url_for('video_feed_2')}}" class="card-img-top" alt="Stream#2">
+          <div class="card-body">
+            <h5 class="card-title">Stream #2</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Enhance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <div class="card" style="width: 60rem;">
+          <img src="{{url_for('video_feed_3')}}" class="card-img-top" alt="Stream #3">
+          <div class="card-body">
+            <h5 class="card-title">Stream #3</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Enhance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+</div>
+{% endblock %}
